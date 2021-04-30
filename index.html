@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Laws of Indices: Mathematics</title>
+</head>
+<body id="body">
+    <div id="init" onclick="startSim();">
+        <div id="ref-name">
+            <h2>MATHEMATICS</h2>
+            <h4>LAWS OF INDICES</h4>
+        </div>
+        <button class="submit" onclick="startSim();">START</button>
+    </div>
+    
+    <div class="main">
+        <div class="interface">
+            <div class="list-of-laws">
+                <div draggable="true" ondragstart="drag(event)" id="multiplication">
+                    Multiplication Law
+                </div>
+                <div draggable="true" ondragstart="drag(event)" id="division">
+                    Division Law
+                </div>
+                <div draggable="true" ondragstart="drag(event)" id="zero_index">
+                    Zero Index Law
+                </div>
+                <div draggable="true" ondragstart="drag(event)" id="fractional_index">
+                    Fractional Index Law
+                </div>
+                <div draggable="true" ondragstart="drag(event)" id="negative_index">
+                    Negative Index Law
+                </div>
+                <div draggable="true" ondragstart="drag(event)" id="bracket">
+                    Bracket Law
+                </div>
+            </div>
+            <div class="example" id="example">
+            </div>
+            <div id="solution" class="solution" ondrop="drop(event)" ondragover="allowDrop(event)">
+                Drag the correct law here..
+            </div>
+            <div class="buttons">
+                <button class="reset control" onclick="spin();">SKIP</button>
+            </div>
+          
+        </div>
+        <div id="shade">
+            <div id="feedback" class="nofeedback">
+                You need a screen with at least <br/> 1,000px width to run this simulation
+            </div>
+        </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
